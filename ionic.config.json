@@ -1,0 +1,7 @@
+{
+  "name": "ionic-input-focus",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
