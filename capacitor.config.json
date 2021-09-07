@@ -1,0 +1,8 @@
+{
+  "appId": "io.ionic.input.focus.api",
+  "appName": "ionic-input-focus",
+  "bundledWebRuntime": false,
+  "npmClient": "yarn",
+  "webDir": "dist",
+  "linuxAndroidStudioPath": "/opt/android-studio/bin/studio.sh"
+}
