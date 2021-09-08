@@ -32,6 +32,27 @@
             <ion-label position="floating">Phone</ion-label>
             <ion-input type="tel" name="phone" v-model="phone" autocomplete="off" />
           </ion-item>
+          <ion-item>
+            <ion-label position="floating">City</ion-label>
+            <ion-input type="tel" name="city" v-model="city" autocomplete="off" />
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">State</ion-label>
+            <ion-input type="tel" name="state" v-model="state" autocomplete="off" />
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Area</ion-label>
+            <ion-input type="tel" name="area" v-model="area" autocomplete="off" />
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">PostalCode</ion-label>
+            <ion-input type="tel" name="postalCode" v-model="postalCode" autocomplete="off" />
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Country</ion-label>
+            <ion-input type="tel" name="country" v-model="country" autocomplete="off" />
+          </ion-item>
+          <ion-button color="success">Success</ion-button>
           <h3>Debug</h3>
           <pre>
             username  {{ username }}
@@ -55,7 +76,8 @@ import {
   IonList,
   IonItem,
   IonLabel,
-  IonInput
+  IonInput,
+  IonButton
 } from '@ionic/vue';
 
 import { defineComponent, reactive, toRefs } from 'vue';
@@ -71,14 +93,20 @@ export default defineComponent({
     IonList,
     IonItem,
     IonLabel,
-    IonInput
+    IonInput,
+    IonButton
   },
   setup () {
     const form = reactive({
       username: '',
       email: '',
       password: '',
-      phone: ''
+      phone: '',
+      city: '',
+      state: '',
+      area: '',
+      postalCode: '',
+      country: '',
     })
 
     return {
