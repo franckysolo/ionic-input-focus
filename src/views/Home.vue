@@ -15,6 +15,7 @@
 
       <div id="container">
         <h2>Ion Input Focus issue verification</h2>
+        <a href="/form">Go to vee-validate form</a>
         <ion-list>
           <ion-item>
             <ion-label position="floating">Username</ion-label>
